@@ -14,5 +14,6 @@ public class BJ_1001 {
         int subtract = A - B;
 
         System.out.println(subtract);
+        sc.close();
     }
 }

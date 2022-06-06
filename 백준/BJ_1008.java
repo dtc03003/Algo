@@ -14,5 +14,6 @@ public class BJ_1008 {
         double division = A / B;
 
         System.out.println(division);
+        sc.close();
     }
 }
