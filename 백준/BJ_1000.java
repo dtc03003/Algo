@@ -14,6 +14,5 @@ public class BJ_1000 {
         int sum = A + B;
 
         System.out.println(sum);
-        sc.close();
     }
 }
