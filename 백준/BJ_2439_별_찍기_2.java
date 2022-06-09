@@ -4,7 +4,7 @@ package 백준;
 
 import java.util.Scanner;
 
-public class BJ_2439 {
+public class BJ_2439_별_찍기_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

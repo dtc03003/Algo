@@ -4,7 +4,7 @@ package 백준;
 
 import java.util.Scanner;
 
-public class BJ_1330 {
+public class BJ_1330_두_수_비교하기 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

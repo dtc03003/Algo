@@ -4,7 +4,7 @@ package 백준;
 
 import java.util.Scanner;
 
-public class BJ_2577 {
+public class BJ_2577_숫자의_개수 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
