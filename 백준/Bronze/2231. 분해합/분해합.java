@@ -6,10 +6,13 @@ public class Main {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(br.readLine());
+        String str = br.readLine();
+        int str_len = str.length();
+
+        int N = Integer.parseInt(str);
         int result = 0;
         
-        for (int i = 0; i < N; i++) {
+        for (int i = (N-(9*str_len)); i < N; i++) {
             int num = i;
             int sum = 0;
 
