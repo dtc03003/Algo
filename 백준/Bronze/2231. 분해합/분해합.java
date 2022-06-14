@@ -5,36 +5,25 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
 
         int N = Integer.parseInt(br.readLine());
-        boolean[] num = new boolean[N];
+        int result = 0;
         
-        for (int i = 1; i <= N; i++) {
-            String str = Integer.toString(i);
+        for (int i = 0; i < N; i++) {
+            int num = i;
             int sum = 0;
 
-            for (int j = 0; j < str.length(); j++) {
-                sum += str.charAt(j) - '0';
+            while (num != 0) {
+                sum += num % 10;
+                num /= 10;
             }
 
-            sum += i;
-
-            if (sum == N) {
-                num[i] = true;
+            if (sum + i == N) {
+                result = i;
                 break;
-            }
-        }
-
-        for (int i = 0; i < N; i++) {
-            if (num[i]) {
-                sb.append(i);
-                break;
-            } else if (i == N - 1) {
-                sb.append(0);
             }
         }
         
-        System.out.println(sb);
+        System.out.println(result);
     }
 }
