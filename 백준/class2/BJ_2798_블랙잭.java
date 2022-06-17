@@ -28,14 +28,14 @@ public class BJ_2798_블랙잭 {
         for (int i = 0; i < N - 2; i++) {
             for (int j = i + 1; j < N - 1; j++) {
                 for (int k = j + 1; k < N; k++) {
-                    int temp = card[i] + card[j] + card[k];
+                    int num = card[i] + card[j] + card[k];
 
-                    if (temp == M) {
-                        return temp;
+                    if (num == M) {
+                        return num;
                     }
 
-                    if (result < temp && temp < M) {
-                        result = temp;
+                    if (result < num && num < M) {
+                        result = num;
                     }
                 }
             }

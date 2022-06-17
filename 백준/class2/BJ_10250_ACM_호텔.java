@@ -17,7 +17,7 @@ public class BJ_10250_ACM_호텔 {
             st = new StringTokenizer(br.readLine());
 
             int H = Integer.parseInt(st.nextToken());   // 방
-            int W = Integer.parseInt(st.nextToken());   // 층
+            Integer.parseInt(st.nextToken());   // 층
             int N = Integer.parseInt(st.nextToken());   // n번째 손님
 
             if (N % H == 0 ) {
