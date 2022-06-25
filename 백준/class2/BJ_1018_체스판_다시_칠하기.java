@@ -61,7 +61,6 @@ public class BJ_1018_체스판_다시_칠하기 {
 
             TF = !TF;
         }
-
         count = Math.min(count, 64 - count);
         min = Math.min(min, count);
     }
