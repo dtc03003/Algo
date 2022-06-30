@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-
     public static boolean[][] arr;
     public static int min = 64;
 
