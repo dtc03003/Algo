@@ -1,16 +1,17 @@
 package Solution;
-// import java.util.*;
+import java.util.*;
 
 class Solution {
     public static void main(String[] args) {
-        System.out.println("최종 "+solution(3, 12));
+        System.out.println("최종 "+solution(1234567));
     }
     
-    public static int[] solution(int num, int total) {
-        int[] answer = new int[num];
-
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = 0;
+    public static String solution(int age) {
+        String answer = "";
+        String str = Integer.toString(age);
+        
+        for(int i = 0; i < str.length(); i++){
+            answer += (char)(str.charAt(i) + '0');
         }
         
         return answer;
