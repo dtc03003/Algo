@@ -3,21 +3,18 @@ import java.util.*;
 
 class Solution {
     public static void main(String[] args) {
-        System.out.println("최종 "+solution(1234567));
+        System.out.println("최종 "+solution(1234567, 2));
     }
     
-    public static int solution(int[] numbers) {
-        int answer = 0;
+    public static int solution(int num, int k) {
+        int answer = -1;
+        String str = Integer.toString(num);
 
-        Arrays.sort(numbers);
-
-        int m = numbers[0] * numbers[1];
-        int p = numbers[numbers.length - 2] * numbers[numbers.length - 1];
-
-        if (m > p) {
-            answer = m;
-        } else {
-            answer = p;
+        for (int i = 1; i <= str.length(); i++) {
+            if (str.charAt(i - 1) - '0'== k) {
+                answer = i;
+                break;
+            }
         }
 
         return answer;
