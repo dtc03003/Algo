@@ -6,14 +6,20 @@ class Solution {
         System.out.println("최종 "+solution(1234567));
     }
     
-    public static String solution(int age) {
-        String answer = "";
-        String str = Integer.toString(age);
-        
-        for(int i = 0; i < str.length(); i++){
-            answer += (char)(str.charAt(i) + '0');
+    public static int solution(int[] numbers) {
+        int answer = 0;
+
+        Arrays.sort(numbers);
+
+        int m = numbers[0] * numbers[1];
+        int p = numbers[numbers.length - 2] * numbers[numbers.length - 1];
+
+        if (m > p) {
+            answer = m;
+        } else {
+            answer = p;
         }
-        
+
         return answer;
     }
 }
