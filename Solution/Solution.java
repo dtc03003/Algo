@@ -3,18 +3,23 @@ import java.util.*;
 
 class Solution {
     public static void main(String[] args) {
-        System.out.println("최종 "+solution(1234567, 2));
+        System.out.println("최종 "+solution(3));
     }
     
-    public static int solution(int num, int k) {
-        int answer = -1;
-        String str = Integer.toString(num);
+    public static int solution(int n) {
+        int answer = 0;
 
-        for (int i = 1; i <= str.length(); i++) {
-            if (str.charAt(i - 1) - '0'== k) {
-                answer = i;
-                break;
+        for (int i = 1; i <= 10; i++) {
+            int num = 1;
+
+            for (int j = 1; j <= i; j++) {
+                num *= j;
             }
+
+            if (num > n)
+                break;
+
+            answer = i;
         }
 
         return answer;
