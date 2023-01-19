@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class P11720_숫자의합 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+        sc.nextInt();
         char[] cNum = sc.next().toCharArray();
         int sum = 0;
 
@@ -13,5 +13,6 @@ public class P11720_숫자의합 {
         }
 
         System.out.print(sum);
+        sc.close();
     }
 }
