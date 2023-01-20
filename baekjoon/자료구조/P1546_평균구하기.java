@@ -1,4 +1,4 @@
-package baekjoon.자료구조;
+package 자료구조;
 
 import java.util.Scanner;
 
