@@ -6,10 +6,10 @@ public class P2018_연속된자연수의합 {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        int start_index = 1;
-        int end_index = 1;
         int cnt = 1;
         int sum = 1;
+        int start_index = 1;
+        int end_index = 1;
 
         while (N != end_index) {
             if (N == sum) {
@@ -21,7 +21,7 @@ public class P2018_연속된자연수의합 {
                 sum += ++end_index;
             }
         }
-        
+
         System.out.println(cnt);
     }
 }
