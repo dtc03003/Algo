@@ -25,5 +25,6 @@ public class P2018_연속된자연수의합 {
             }
         }
         System.out.println(cnt);
+        sc.close();
     }
 }
