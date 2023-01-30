@@ -1,3 +1,4 @@
+package 다시풀어보기;
 import java.util.Scanner;
 
 public class P1546_평균구하기 {
