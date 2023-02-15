@@ -1,4 +1,4 @@
-package 정렬;
+package 탐색;
 
 import java.io.BufferedReader;
 import java.io.IOException;
