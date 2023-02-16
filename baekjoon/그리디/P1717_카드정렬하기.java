@@ -27,5 +27,6 @@ public class P1717_카드정렬하기 {
         }
 
         System.out.println(sum);
+        sc.close();
     }
 }

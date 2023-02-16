@@ -37,5 +37,6 @@ public class P1931_회의실배정 {
         }
 
         System.out.println(cnt);
+        sc.close();
     }
 }

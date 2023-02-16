@@ -14,6 +14,7 @@ public class P2023_신기한소수찾기 {
         DFS(3, 1);
         DFS(5, 1);
         DFS(7, 1);
+        sc.close();
     }
     
     static void DFS(int num, int jari) {

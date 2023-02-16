@@ -56,5 +56,6 @@ public class P1744_수묶기 {
 
         sum = sum + one;
         System.out.println(sum);
+        sc.close();
     }
 }
