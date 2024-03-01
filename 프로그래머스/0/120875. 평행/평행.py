@@ -1,10 +1,3 @@
 def solution(dots):
-    answer = 0
-    dots = sorted(dots)
-    if ((dots[1][1] - dots[0][1]) / (dots[1][0] - dots[0][0])) == ((dots[3][1] - dots[2][1]) / (dots[3][0] - dots[2][0])):
-        answer = 1
-    else:
-        if (dots[2][1] - dots[1][1]) / (dots[2][0] - dots[1][0]) == (dots[3][1] - dots[0][1]) / (dots[3][0] - dots[0][0]):
-            answer = 1
-
-    return answer
+    dots.sort()
+    return 1 if ((dots[1][1] - dots[0][1]) / (dots[1][0] - dots[0][0])) == ((dots[3][1] - dots[2][1]) / (dots[3][0] - dots[2][0])) else 1 if (dots[2][1] - dots[1][1]) / (dots[2][0] - dots[1][0]) == (dots[3][1] - dots[0][1]) / (dots[3][0] - dots[0][0]) else 0
