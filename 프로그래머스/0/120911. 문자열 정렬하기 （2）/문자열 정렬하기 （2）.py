@@ -1,2 +1,2 @@
 def solution(my_string):
-    return ''.join(sorted(''.join(my_string).lower()))
+    return ''.join(sorted(my_string.lower()))
