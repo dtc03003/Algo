@@ -1,5 +1,6 @@
 def solution(arr):
-    for i in range(len(arr)):
+    i = 0
+    while True:
         temp = arr.copy()
         for j in range(len(arr)):
             if arr[j] >= 50:
@@ -11,4 +12,5 @@ def solution(arr):
                     
         if temp == arr:
             return i
+        i += 1 
 
