@@ -1,6 +1,4 @@
 def solution(arr):
-    answer = [[]]
-
     size = max(len(arr[1]), len(arr))
     
     answer = [[0] * size for i in range(size)]
