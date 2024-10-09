@@ -5,4 +5,4 @@ def solution(n):
     for i in range(2, n+1):
         current, num = current+num, current
     
-    return current% 1234567
+    return current % 1234567
