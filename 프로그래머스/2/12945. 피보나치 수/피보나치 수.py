@@ -1,8 +1,8 @@
 def solution(n):
     num = 0;
-    current = 1;
+    cur = 1;
     
     for i in range(2, n+1):
-        current, num = current+num, current
+        cur, num = cur+num, cur
     
-    return current % 1234567
+    return cur % 1234567
